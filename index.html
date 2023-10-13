@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./estilo.css">
+    <script src="./app.js" defer></script>
+    <title>Poke API</title>
+</head>
+<body>
+    <header>
+        <img src="./images/Pokémon_GO_logo.svg.png" width="50%"  alt="PokeApi Paginacion">
+        <div class="limit">
+            
+            <p>Por Página</p>
+            <select id="limit" onchange="changePg(value);">
+                <option value="40">40</option>
+                <option value="60">60</option>
+                <option value="80">80</option>
+            </select>
+        </div>
+        <div class="navigation">
+            <button onclick="prev()">«</button>
+            <div class="numbers"></div>
+            <button onclick="next()">»</button>
+        </div>
+        
+    </header>
+    <section>
+        <div class="container">
+            <div class="pokemons"></div>
+        </div>
+    </section>
+    <footer>
+        <p class="">🪐</p> 
+    </footer>
+</body>
+</html>
